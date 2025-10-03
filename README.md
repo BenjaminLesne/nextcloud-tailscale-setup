@@ -28,6 +28,7 @@ docker compose up -d
 ## 3. Setting up a domain
 
 Nextcloud will require a proper domain with HTTPS. You can serve a tailnet domain from your desktop using the following command.
+This domain won't show any web page until NextCloud AIO is setup.
 
 ```bash
 tailscale serve --bg http://127.0.0.1:11000
