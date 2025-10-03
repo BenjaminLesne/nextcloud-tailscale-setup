@@ -27,7 +27,7 @@ docker compose up -d
 
 ## 3. Setting up a domain
 
-Nextcloud will require a proper domain with HTTPS. You can serve a domain from your desktop using the following command. Notice the http://.
+Nextcloud will require a proper domain with HTTPS. You can serve a tailnet domain from your desktop using the following command.
 
 ```bash
 tailscale serve --bg http://127.0.0.1:11000
@@ -65,7 +65,7 @@ You can get it from:
 tailscale serve status
 ```
 
-Alternatively, it will be visible via the [Tailscale Dashboard](https://login.tailscale.com/admin/machines). Click on the IP address, and copy the domain name that is formatted like: name.tail0a12b3.ts.net, then paste it on the domain field requested by NextCloud in your browser.
+Alternatively, it will be visible via the [Tailscale Dashboard](https://login.tailscale.com/admin/machines). Click on the IP address, and copy the domain name that is formatted like: `name.tail0a12b3.ts.net`, then paste it on the domain field requested by NextCloud in your browser.
 
 Afterwards, continue the setup wizard: select Nextcloud Hub 25 if you want (I did), select your desired containers (I selected none), set up the TimeZone, and finally "Download and start containers".
 
